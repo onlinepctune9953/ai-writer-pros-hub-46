@@ -231,7 +231,7 @@ export default function ContentRepurposing() {
                 <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-teal-500 rounded-lg flex items-center justify-center mb-4">
                   <FileText className="h-6 w-6 text-white" />
                 </div>
-                <CardTitle>Email &amp; Newsletters</CardTitle>
+                <CardTitle>Email {`&`} Newsletters</CardTitle>
                 <CardDescription>Perfect for email marketing campaigns</CardDescription>
               </CardHeader>
               <CardContent>
@@ -276,7 +276,7 @@ export default function ContentRepurposing() {
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2" />
-                    Quotes &amp; snippets
+                    Quotes {`&`} snippets
                   </li>
                   <li className="flex items-center">
                     <CheckCircle className="h-4 w-4 text-green-600 mr-2" />
