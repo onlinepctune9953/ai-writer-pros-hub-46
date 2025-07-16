@@ -158,7 +158,7 @@ export default function ContentRepurposing() {
                           <Card key={formatId} className="p-4">
                             <div className="flex items-center justify-between mb-2">
                               <div className="flex items-center">
-                                <format!.icon className="h-4 w-4 mr-2" />
+                                <format.icon className="h-4 w-4 mr-2" />
                                 <span className="font-medium">{format!.name}</span>
                               </div>
                               <Button variant="outline" size="sm">Copy</Button>
