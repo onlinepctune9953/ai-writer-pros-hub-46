@@ -118,6 +118,24 @@ export default function ContentRepurposing() {
                     </div>
                   </div>
 
+                  <div className="mt-6">
+                    <label className="block text-sm font-medium mb-2">Optional URL Input</label>
+                    <input
+                      type="url"
+                      placeholder="Paste a URL to extract content..."
+                      className="w-full p-3 border rounded-lg"
+                    />
+                  </div>
+
+                  <div className="mt-6">
+                    <label className="block text-sm font-medium mb-2">Brand Voice (Optional)</label>
+                    <input
+                      type="text"
+                      placeholder="My brand tone is..."
+                      className="w-full p-3 border rounded-lg"
+                    />
+                  </div>
+
                   <Button 
                     onClick={handleGenerate}
                     disabled={!inputContent || selectedFormats.length === 0 || isGenerating}

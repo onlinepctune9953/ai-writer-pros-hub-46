@@ -1,4 +1,3 @@
-
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
@@ -498,6 +497,117 @@ export default function Index() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Choose Your Plan</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Flexible pricing for individuals and teams. Start with a free plan or upgrade for advanced features.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+            {/* Free Plan */}
+            <Card className="border border-green-500">
+              <CardHeader>
+                <CardTitle className="text-xl font-bold">Free Plan</CardTitle>
+                <CardDescription className="text-muted-foreground">$0/month</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2">
+                  <li>Basic AI Writing Tools</li>
+                  <li>Limited Content Repurposing</li>
+                  <li>Community Support</li>
+                </ul>
+                <Button className="mt-4 w-full">Get Started</Button>
+              </CardContent>
+            </Card>
+
+            {/* Monthly Plan */}
+            <Card className="border border-blue-500">
+              <CardHeader>
+                <CardTitle className="text-xl font-bold">Pro Plan</CardTitle>
+                <CardDescription className="text-muted-foreground">$29/month</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2">
+                  <li>Advanced AI Writing Tools</li>
+                  <li>Unlimited Content Repurposing</li>
+                  <li>Email and Chat Support</li>
+                </ul>
+                <Button className="mt-4 w-full">Start Free Trial</Button>
+              </CardContent>
+            </Card>
+
+            {/* Yearly Plan */}
+            <Card className="border border-purple-500">
+              <CardHeader>
+                <CardTitle className="text-xl font-bold">Enterprise Plan</CardTitle>
+                <CardDescription className="text-muted-foreground">$19/month (billed annually)</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2">
+                  <li>All Pro Features</li>
+                  <li>Team Collaboration Tools</li>
+                  <li>Priority Support</li>
+                </ul>
+                <Button className="mt-4 w-full">Start Free Trial</Button>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Chart Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Features Comparison</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Compare features across all plans to find the best fit for your needs.
+            </p>
+          </div>
+
+          <table className="w-full border-collapse border border-gray-300">
+            <thead>
+              <tr>
+                <th className="border border-gray-300 p-4">Feature</th>
+                <th className="border border-gray-300 p-4">Free</th>
+                <th className="border border-gray-300 p-4">Pro</th>
+                <th className="border border-gray-300 p-4">Enterprise</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-gray-300 p-4">AI Writing Tools</td>
+                <td className="border border-gray-300 p-4">Basic</td>
+                <td className="border border-gray-300 p-4">Advanced</td>
+                <td className="border border-gray-300 p-4">Advanced</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 p-4">Content Repurposing</td>
+                <td className="border border-gray-300 p-4">Limited</td>
+                <td className="border border-gray-300 p-4">Unlimited</td>
+                <td className="border border-gray-300 p-4">Unlimited</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 p-4">Support</td>
+                <td className="border border-gray-300 p-4">Community</td>
+                <td className="border border-gray-300 p-4">Email & Chat</td>
+                <td className="border border-gray-300 p-4">Priority</td>
+              </tr>
+              <tr>
+                <td className="border border-gray-300 p-4">Collaboration Tools</td>
+                <td className="border border-gray-300 p-4">-</td>
+                <td className="border border-gray-300 p-4">-</td>
+                <td className="border border-gray-300 p-4">Yes</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
 

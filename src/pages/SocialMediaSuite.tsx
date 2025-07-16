@@ -1,4 +1,3 @@
-
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
@@ -124,6 +123,57 @@ export default function SocialMediaSuite() {
                 <p className="text-sm text-muted-foreground">Posts, Stories, Events, Community content</p>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Social Media Suite Tool */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">Create Social Media Content Instantly</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Use our AI-powered tool to generate platform-specific content for Instagram, Twitter, LinkedIn, and Facebook.
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <form className="space-y-6">
+              <div>
+                <label className="block text-sm font-medium mb-2">Platform</label>
+                <select className="w-full p-3 border rounded-lg">
+                  <option value="Instagram">Instagram</option>
+                  <option value="Twitter">Twitter</option>
+                  <option value="LinkedIn">LinkedIn</option>
+                  <option value="Facebook">Facebook</option>
+                </select>
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium mb-2">Content Description</label>
+                <textarea
+                  placeholder="Describe the type of content you want (e.g., promotional post, story, article)"
+                  className="w-full p-3 border rounded-lg"
+                  rows={6}
+                ></textarea>
+              </div>
+
+              <Button className="w-full">
+                <MessageSquare className="mr-2 h-4 w-4" />
+                Generate Content
+              </Button>
+            </form>
+
+            <div className="mt-8">
+              <h3 className="text-lg font-bold mb-4">Generated Content</h3>
+              <Card className="border border-gray-300">
+                <CardContent>
+                  <p className="text-sm text-muted-foreground">
+                    Your generated content will appear here.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
