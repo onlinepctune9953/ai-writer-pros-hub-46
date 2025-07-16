@@ -36,6 +36,7 @@ export default function ContentRepurposing() {
     }, 3000);
   };
 
+  // Make sure there's no syntax error before the return statement
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
