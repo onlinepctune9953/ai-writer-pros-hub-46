@@ -154,20 +154,22 @@ export default function ContentRepurposing() {
                     ) : (
                       selectedFormats.map((formatId) => {
                         const format = contentFormats.find(f => f.id === formatId);
+                        if (!format) return null;
+                        const Icon = format.icon;
                         return (
                           <Card key={formatId} className="p-4">
                             <div className="flex items-center justify-between mb-2">
                               <div className="flex items-center">
-                                <format!.icon className="h-4 w-4 mr-2" />
-                                <span className="font-medium">{format!.name}</span>
+                                <Icon className="h-4 w-4 mr-2" />
+                                <span className="font-medium">{format.name}</span>
                               </div>
                               <Button variant="outline" size="sm">Copy</Button>
                             </div>
                             <div className="text-sm text-muted-foreground bg-muted/50 p-3 rounded">
                               {isGenerating ? (
-                                <div className="animate-pulse">Generating {format!.name.toLowerCase()}...</div>
+                                <div className="animate-pulse">Generating {format.name.toLowerCase()}...</div>
                               ) : (
-                                inputContent ? `Your ${format!.name.toLowerCase()} will appear here...` : 'Add content to generate'
+                                inputContent ? `Your ${format.name.toLowerCase()} will appear here...` : 'Add content to generate'
                               )}
                             </div>
                           </Card>
